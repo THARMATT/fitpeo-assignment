@@ -5,17 +5,17 @@ import Header from "./Header";
 
 function Layout() {
   return (
-    <div>
-      <div className="h-screen w-screen overfow-hidden bg-neutral-100 flex flex-row">
+    <div >
+      <div className="max-h-screen max-w-screen overfow-hidden bg-neutral-100 flex flex-row">
         <Sidebar />
         <div className="flex-1">
           {" "}
           <Header />
        
 
-      <div className="p-4">
+      <div  id="outlet " className="h-screen overflow-auto">
         {" "}
-        <Outlet />
+        <Outlet  />
       </div> </div>
       </div>
     </div>

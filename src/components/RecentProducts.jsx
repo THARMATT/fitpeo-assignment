@@ -4,29 +4,101 @@ import classNames from 'classnames'
 import { HiOutlineSearch } from 'react-icons/hi'
 function RecentProducts() {
 
-    const popularProducts= [
-        {
-          id: '2',
-          product_name: 'Blood Pressure Monitor',
-          product_thumbnail: 'https://source.unsplash.com/100x100?bloodpressure',
-          product_price: '$39.99',
-          product_stock: 102
-        },
-        {
-          id: '3',
-          product_name: 'First Aid Kit',
-          product_thumbnail: 'https://source.unsplash.com/100x100?firstaid',
-          product_price: '$29.99',
-          product_stock: 8
-        },
-       
-      ];
+    const popularProducts = [
+		{
+		  id: '1',
+		  product_name: 'Digital Thermometer',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?thermometer',
+		  product_price: '$19.99',
+		  product_stock: 50
+		},
+		{
+		  id: '2',
+		  product_name: 'First Aid Kit',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?firstaidkit',
+		  product_price: '$29.99',
+		  product_stock: 25
+		},
+		{
+		  id: '3',
+		  product_name: 'Blood Pressure Monitor',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?bloodpressuremonitor',
+		  product_price: '$39.99',
+		  product_stock: 30
+		},
+		{
+		  id: '4',
+		  product_name: 'Hand Sanitizer',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?handsanitizer',
+		  product_price: '$9.99',
+		  product_stock: 100
+		},
+		{
+		  id: '5',
+		  product_name: 'Face Mask',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?facemask',
+		  product_price: '$5.99',
+		  product_stock: 200
+		},
+		{
+		  id: '6',
+		  product_name: 'Vitamins and Supplements',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?vitamins',
+		  product_price: '$24.99',
+		  product_stock: 40
+		},
+		{
+		  id: '7',
+		  product_name: 'Pain Relievers',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?painrelievers',
+		  product_price: '$12.99',
+		  product_stock: 75
+		},
+		{
+		  id: '8',
+		  product_name: 'Throat Lozenges',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?lozenges',
+		  product_price: '$7.99',
+		  product_stock: 60
+		},
+		{
+		  id: '9',
+		  product_name: 'Medical Face Shield',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?faceshield',
+		  product_price: '$14.99',
+		  product_stock: 35
+		},
+		{
+		  id: '10',
+		  product_name: 'Hand Wash Soap',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?handwash',
+		  product_price: '$6.99',
+		  product_stock: 80
+		},
+		{
+		  id: '11',
+		  product_name: 'Digital Blood Glucose Monitor',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?bloodglucose',
+		  product_price: '$49.99',
+		  product_stock: 20
+		},
+		{
+		  id: '12',
+		  product_name: 'Infrared Forehead Thermometer',
+		  product_thumbnail: 'https://source.unsplash.com/100x100?infraredthermometer',
+		  product_price: '$34.99',
+		  product_stock: 15
+		}
+	  ];
+	  
+	 
+	  
       
   return (
    <div className="bg-white px-4 pt-3 pb-4 rounded-sm border border-gray-200 flex-1">
 
 <div className=" h-6 flex justify-between items-center ">
-<strong >Product Sell</strong>
+<strong >Product in Demand</strong>
 <div className='relative flex items-center '>
 <HiOutlineSearch className='text-gray-400 absolute text-l m-2'/>
     <input type="text" placeholder='Search...' className='text-sm outline-none active:outline-none h-6 w-[7rem] border-gray-300 border  rounded-md px-6  ' />

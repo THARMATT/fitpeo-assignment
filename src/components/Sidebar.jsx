@@ -10,11 +10,11 @@ export default function Sidebar() {
   const { pathname } = useLocation();
 
   return (
-    <div className='bg-indigo-950 w-60 p-3 text-white flex flex-col'>
+    <div className='bg-indigo-950  h-screen w-60 p-3 text-white flex flex-col'>
 
-      <div className="flex items-center gap-2 px-1 py-3">
+      <div className="flex items-center gap-2 px-1 py-3 mt-2">
         <IoFitnessSharp className='text-red-400 text-4xl' />
-        <span className='text-neutal-100 text-lg font-serif cursor-pointer'>Fitpeo</span>
+        <span className='text-neutal-100 text-lg font-serif cursor-pointer '>Fitpeo</span>
       </div>
 
       <div className='flex-1 py-8 flex flex-col gap-0.5'>

@@ -6,7 +6,7 @@ import { GoStack } from "react-icons/go";
 import { HiShoppingBag } from "react-icons/hi";
 export default function Dashboardstats() {
   return (
-    <div className="flex gap-4 w-full flex-wrap">
+    <div className="flex gap-4 w-full flex-wrap p-2">
       <BoxWrapper>
         {" "}
         <div className="rounded-full h-12 w-12 flex items-center justify-center bg-green-200">

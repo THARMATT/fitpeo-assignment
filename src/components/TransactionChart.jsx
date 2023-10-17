@@ -75,7 +75,7 @@ const data = [
 
 export default function TransactionChart() {
   return (
-    <div className="h-[20rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
+    <div className="h-[20rem] w-[30rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
       <strong className="text-gray-700 font-semibold">Overview</strong>
       <p className="text-gray-400">Monthly Earning</p>
       <div className="mt-3 w-full flex-1 text-xs">
