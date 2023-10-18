@@ -6,9 +6,9 @@ import RecentProducts from './RecentProducts'
 
 function Dashboard() {
   return (
-    <div className='flex flex-col gap-4 flex-wrap '>
+    <div className='flex flex-col gap-4 flex-wrap /'>
        <Dashboardstats/>
-       <div className="flex flex-row gap-6 w-full flex-wrap p-2">
+       <div className="flex flex-row gap-6 w-full flex-wrap p-2  sm:flex-col sm:items-center  md:flex-col md:items-center">
        <TransactionChart/>
        <CustomerChart/>
        </div> 

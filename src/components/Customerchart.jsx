@@ -93,12 +93,12 @@ export default class Customerchart extends PureComponent {
 
   render() {
     return (
-      <div className="w-[25rem] h-[20rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col">
+      <div className="w-[25rem]  xs:hidden h-[20rem] sm:w-[14rem] md:w-[16rem] xs:w-[12rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col sm:items-center md:items-center">
         <strong className="text-gray-700 font-semibold">Customers</strong>
         <p className="text-gray-400 text-sm">Customers that Buy Products</p>
         <div className="mt-3 w-full flex-1 text-xs">
           <ResponsiveContainer width="100%" height="100%">
-            <PieChart width={300} height={300}>
+            <PieChart width={300} height={300} >
               <Pie
                 activeIndex={this.state.activeIndex}
                 activeShape={renderActiveShape}
@@ -106,7 +106,7 @@ export default class Customerchart extends PureComponent {
                 cx="50%"
                 cy="50%"
                 innerRadius={50}
-                outerRadius={70}
+                outerRadius={80}
                 fill=" #FFBB28"
                 dataKey="value"
                 onMouseEnter={this.onPieEnter}

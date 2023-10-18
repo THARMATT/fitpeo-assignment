@@ -3,10 +3,10 @@ import {
   BarChart,
   Bar,
   XAxis,
-  YAxis,
+
   CartesianGrid,
   Tooltip,
-  Legend,
+
   ResponsiveContainer,
 } from "recharts";
 
@@ -75,12 +75,12 @@ const data = [
 
 export default function TransactionChart() {
   return (
-    <div className="h-[20rem] w-[30rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
+    <div className="h-[20rem] w-[30rem] sm:w-[14rem] md:w-[16rem]  xs:w-[10rem]  bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
       <strong className="text-gray-700 font-semibold">Overview</strong>
       <p className="text-gray-400">Monthly Earning</p>
       <div className="mt-3 w-full flex-1 text-xs">
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart
+        <ResponsiveContainer width="100%" height="100%" >
+          <BarChart 
             width={300}
             height={200}
             data={data}
@@ -99,7 +99,7 @@ export default function TransactionChart() {
               height={30}
             ></XAxis>
 
-            <Tooltip />
+            <Tooltip  />
 
             <Bar
               onClick={(entry) => setSelectedBar(entry.name)}
@@ -107,6 +107,7 @@ export default function TransactionChart() {
               fill="#0ea5e9"
               radius={[10, 10, 10, 10]}
               barSize={40}
+              
             />
           </BarChart>
         </ResponsiveContainer>

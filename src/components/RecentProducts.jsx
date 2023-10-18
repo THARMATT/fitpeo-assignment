@@ -95,16 +95,16 @@ function RecentProducts() {
 	  
       
   return (
-   <div className="bg-white px-4 pt-3 pb-4 rounded-sm border border-gray-200 flex-1">
+   <div className="bg-white px-4 pt-3 xs:p-1   rounded-sm border border-gray-200 flex-1 ">
 
 <div className=" h-6 flex justify-between items-center ">
-<strong >Product in Demand</strong>
+<strong  className='xs:text-[8px]'>Product in Demand</strong>
 <div className='relative flex items-center '>
-<HiOutlineSearch className='text-gray-400 absolute text-l m-2'/>
+<HiOutlineSearch className='text-gray-400 absolute text-l m-2 xs:text-[8px] '/>
     <input type="text" placeholder='Search...' className='text-sm outline-none active:outline-none h-6 w-[7rem] border-gray-300 border  rounded-md px-6  ' />
 </div>
    </div>
-			<div className="mt-4 flex flex-col gap-3">
+			<div className="mt-4 flex flex-col gap-3 sm:gap-1">
 				{popularProducts.map((product) => (
 					<Link
 						key={product.id}
